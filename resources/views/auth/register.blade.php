@@ -13,7 +13,7 @@
                                             src="{{ asset('assets/app-assets/images/logo/logo.png') }}"
                                             alt="branding logo"></div>
                                 </div>
-                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-s"><span>Parking Reservation</span></h6>
+                                <h6 class="card-subtitle line-on-side text-muted text-center font-small-3 pt-s"><span>Create your own account</span></h6>
                             </div>
                             <div class="card-body">
                                 <form method="POST" action="{{ route('register') }}">

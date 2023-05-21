@@ -16,11 +16,11 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="info">{{ $carparks }}</h3>
-                                            <h6>Car Parks</h6>
+                                            <h3 class="info">5</h3>
+                                            <h6>Plant Variants</h6>
                                         </div>
                                         <div>
-                                            <i class="la la-car info font-large-2 float-right"></i>
+                                            <i class="la la-tree info font-large-2 float-right"></i>
                                         </div>
                                     </div>
                                     <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
@@ -38,8 +38,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="warning">{{ $bookings }}</h3>
-                                            <h6>Bookings</h6>
+                                            <h3 class="warning">23</h3>
+                                            <h6>Notes</h6>
                                         </div>
                                         <div>
                                             <i class="la la-newspaper-o warning font-large-2 float-right"></i>
@@ -60,8 +60,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="success">{{ $customers }}</h3>
-                                            <h6>Customers</h6>
+                                            <h3 class="success">12</h3>
+                                            <h6>Users</h6>
                                         </div>
                                         <div>
                                             <i class="la la-user success font-large-2 float-right"></i>
@@ -82,8 +82,8 @@
                                 <div class="card-body">
                                     <div class="media d-flex">
                                         <div class="media-body text-left">
-                                            <h3 class="danger">{{ $feedbacks }}</h3>
-                                            <h6>Feedbacks</h6>
+                                            <h3 class="danger">32</h3>
+                                            <h6>Saved</h6>
                                         </div>
                                         <div>
                                             <i class="la la-bookmark danger font-large-2 float-right"></i>
@@ -105,7 +105,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">Sales Chart</h4>
+                                <h4 class="card-title">Variant Distribution</h4>
                                 <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                                 <div class="heading-elements">
                                     <ul class="list-inline mb-0">
@@ -140,10 +140,10 @@
         const myChart = new Chart(ctx, {
             type: 'bar',
             data: {
-                labels: @json($dates),
+                labels: @json(['1','2','3']),
                 datasets: [{
-                    label: 'Sales of last ten days',
-                    data: @json($sales),
+                    label: 'Distribution chart',
+                    data: @json([200,600,54]),
                     backgroundColor: [
                         'rgba(16, 135, 211, 1)',
                         'rgba(255, 115, 24, 1)',
